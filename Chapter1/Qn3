@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int hindi, math, english, science, french, total;
+    float percentage;
+    printf("Enter the marks secured in Hindi: ");
+    scanf("%d", &hindi);
+
+    printf("Enter the marks secured in Maths: ");
+    scanf("%d", &math);
+
+    printf("Enter the marks secured in English: ");
+    scanf("%d", &english);
+
+    printf("Enter the marks secured in Science: ");
+    scanf("%d", &science);
+
+    printf("Enter the marks Secured in French: ");
+    scanf("%d", &french);
+
+    total = hindi+math+english+science+french;
+
+    percentage = total/5;
+
+    printf("\nAggregate marks is          : %d", total);
+    printf("\nPercentage marks secured is : %0.2f %%", percentage);
+}
